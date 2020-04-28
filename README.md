@@ -1,11 +1,21 @@
 # My Update
 
-Change the following file:
+## Change
 
 - change run.py
 - change index.html
 - add file jquery-3.2.1.min.js
 
+## Installation
+
+Install Python2.7 x86
+
+Install PyGtk:
+
+http://ftp.gnome.org/pub/GNOME/binaries/win32/pygtk/2.24/pygtk-all-in-one-2.24.0.win32-py2.7.msi
+
+pip install -U wxPython
+pip install pyautogui
 
 
 
