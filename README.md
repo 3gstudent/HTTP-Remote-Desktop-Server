@@ -4,7 +4,7 @@
 
 - change run.py
 - change index.html
-- add file jquery-3.2.1.min.js
+- add `jquery-3.2.1.min.js`
 
 ## Installation
 
