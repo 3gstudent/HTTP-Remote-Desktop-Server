@@ -21,7 +21,7 @@ pip install -U wxPython
 pip install pyautogui
 ```
 
-## Usage:
+## Usage
 
 run.py <ip> <port>
 
