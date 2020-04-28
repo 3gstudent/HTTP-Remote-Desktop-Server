@@ -23,7 +23,7 @@ pip install pyautogui
 
 ## Usage
 
-run.py <ip> <port>
+`run.py <ip> <port>`
 
 
 ---------------------
