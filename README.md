@@ -14,9 +14,10 @@ Install PyGtk:
 
 http://ftp.gnome.org/pub/GNOME/binaries/win32/pygtk/2.24/pygtk-all-in-one-2.24.0.win32-py2.7.msi
 
+```
 pip install -U wxPython
 pip install pyautogui
-
+```
 
 
 
