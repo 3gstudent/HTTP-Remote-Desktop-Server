@@ -1,4 +1,5 @@
 import wx
+import sys
 from BaseHTTPServer import HTTPServer
 import mimetypes
 import urlparse
@@ -6,8 +7,8 @@ import gtk.gdk
 from BaseHTTPServer import BaseHTTPRequestHandler
 import pyautogui
 
-IP = "191.185.252.164"
-PORT = 9010
+IP = ""
+PORT = ""
 SCR_X = 1600
 SCR_Y = 900
 
@@ -96,11 +97,19 @@ class requestHandler(BaseHTTPRequestHandler):
         #pass
         do_GET2(self)
 
+if __name__ == '__main__':
+    if len(sys.argv)!=3:
+        print('[!]Wrong parameter')
+        print('Usage:')
+        print('     %s <ip> <port>'%(sys.argv[0]))
+        sys.exit(0)
+    else:
+        IP = sys.argv[1]
+        PORT = sys.argv[2]
+        server = HTTPServer(("", PORT), requestHandler)
+        print('Starting server, use <Ctrl-C> to stop')
+        server.serve_forever()
 
 
-server = HTTPServer(("", PORT), requestHandler)
-
-print 'Starting server, use <Ctrl-C> to stop'
-server.serve_forever()
 
 
